@@ -1,0 +1,5 @@
+#Credentials in env
+.env
+
+#Ignore venv files
+venv/
