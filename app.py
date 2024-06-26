@@ -45,7 +45,7 @@ def vector_embedding():
 
 
 
-prompt1=st.text_input("Enter Your Question From Doduments")
+prompt1=st.text_input("Enter Your Question From Documents")
 
 
 if st.button("Documents Embedding"):
@@ -63,7 +63,7 @@ if prompt1:
     start=time.process_time()
     response=retrieval_chain.invoke({'input':prompt1})
     print("Response time :",time.process_time()-start)
-    st.write(response['answer'])
+    st.write(response['answer']) #this is from LLM...
 
     # With a streamlit expander
     with st.expander("Document Similarity Search"):
